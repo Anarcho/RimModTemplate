@@ -1,0 +1,117 @@
+{
+	// Place your RimModTemplate workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"RimWorld Class": {
+		"scope": "csharp",
+		"prefix": "rwclass",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Linq;",
+			"using Verse;",
+			"using RimWorld;",
+			"using HarmonyLib;",
+			"",
+			"namespace ${1:YourModNamespace}",
+			"{",
+			"\tpublic class ${2:YourClassName} : ${3:Thing}",
+			"\t{",
+			"\t\t${4:// Class members}",
+			"\t\t",
+			"\t\tpublic override void ${5:ExposeData}()",
+			"\t\t{",
+			"\t\t\tbase.${5:ExposeData}();",
+			"\t\t\t${6:// Save/load data here}",
+			"\t\t}",
+			"\t\t",
+			"\t\t${0:// Additional methods}",
+			"\t}",
+			"}"
+		],
+		"description": "Create a new RimWorld class with common structure"
+	},
+	"RimWorld Basic Class": {
+		"scope": "csharp",
+		"prefix": "rwclass",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Linq;",
+			"using Verse;",
+			"using RimWorld;",
+			"using HarmonyLib;",
+			"",
+			"namespace ${1:YourModNamespace}",
+			"{",
+			"\tpublic class ${2:YourClassName}",
+			"\t{",
+			"\t\t${3:// Class members}",
+			"\t\t",
+			"\t\tpublic override void ${4:ExposeData}()",
+			"\t\t{",
+			"\t\t\tbase.${5:ExposeData}();",
+			"\t\t\t${6:// Save/load data here}",
+			"\t\t}",
+			"\t\t",
+			"\t\t${0:// Additional methods}",
+			"\t}",
+			"}"
+		],
+		"description": "Create a new RimWorld class without Thing inheritance"
+	},
+	"RimWorld hediff comp class with comp properties": {
+		"scope": "csharp",
+		"prefix": "rwhediffcomp",
+		"body": [
+			"using System;",
+			"using Verse;",
+			"using RimWorld;",
+			"",
+			"namespace ${1:YourModNamespace}",
+			"{",
+			"\tpublic class ${2:HediffComp_${3:MyComp}} : HediffComp",
+			"\t{",
+			"\t\tpublic ${2:HediffComp_${3:MyComp}}Props Props => (${2:HediffComp_${3:MyComp}}Props)this.props;",
+			"",
+			"\t\tpublic override void CompPostMake()",
+			"\t\t{",
+			"\t\t\tbase.CompPostMake();",
+			"\t\t\t${4:// Initialization code here}",
+			"\t\t}",
+			"",
+			"\t\tpublic override void CompExposeData()",
+			"\t\t{",
+			"\t\t\tbase.CompExposeData();",
+			"\t\t\t${5:// Save/load data here}",
+			"\t\t}",
+			"",
+			"\t\t${0:// Additional methods here}",
+			"\t}",
+			"",
+			"\tpublic class ${2:HediffComp_${3:MyComp}}Props : HediffCompProperties",
+			"\t{",
+			"\t\tpublic ${2:HediffComp_${3:MyComp}}Props()",
+			"\t\t{",
+			"\t\t\tthis.compClass = typeof(${2:HediffComp_${3:MyComp}});",
+			"\t\t}",
+			"\t\t${6:// Custom properties here}",
+			"\t}",
+			"}"
+		],
+		"description": "Create a HediffComp and its comp properties class in one file"
+	}
+}

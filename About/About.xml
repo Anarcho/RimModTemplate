@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+    <name>RimModTemplate</name>
+    <author>YourName</author>
+    <packageId>YourName.RimModTemplate</packageId>
+    <description>A template for creating RimWorld mods</description>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+</ModMetaData>
