@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ExampleModTemplate.CustomDef>
+    <defName>ExampleCustomDef</defName>
+    <label>Example Custom Definition</label>
+    <description>This is an example of a custom definition.</description>
+    <customProperty1>Value1</customProperty1>
+    <customProperty2>Value2</customProperty2>
+  </ExampleModTemplate.CustomDef>
+</Defs>

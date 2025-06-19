@@ -6,7 +6,7 @@
         "Mod",
         "Game"
     ],
-    "identity": "RimWorld.Mod.Template",
+    "identity": "Anarcho.RimWorldMod.Template",
     "name": "RimWorld Mod Template",
     "shortName": "rimworldmod",
     "tags": {
@@ -15,44 +15,7 @@
     },
     "sourceName": "RimModTemplate",
     "preferNameDirectory": true,
-    "symbols": {
-        "name": {
-            "type": "parameter",
-            "datatype": "string",
-            "defaultValue": "MyRimWorldMod",
-            "replaces": "RimModTemplate",
-            "fileRename": "RimModTemplate",
-            "description": "The name of the RimWorld mod"
-        },
-        "ModAuthor": {
-            "type": "parameter",
-            "datatype": "string",
-            "defaultValue": "YourName",
-            "replaces": "YourName",
-            "description": "The author of the mod"
-        },
-        "ModDescription": {
-            "type": "parameter",
-            "datatype": "string",
-            "defaultValue": "A RimWorld mod",
-            "replaces": "A template for creating RimWorld mods",
-            "description": "Description of the mod"
-        },
-        "ModVersion": {
-            "type": "parameter",
-            "datatype": "string",
-            "defaultValue": "1.0.0",
-            "replaces": "1.0.0",
-            "description": "Version of the mod"
-        },
-        "RimWorldVersion": {
-            "type": "parameter",
-            "datatype": "string",
-            "defaultValue": "1.4",
-            "replaces": "1.4",
-            "description": "Target RimWorld version"
-        }
-    },
+    "symbols": {},
     "sources": [
         {
             "modifiers": [

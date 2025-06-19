@@ -371,9 +371,6 @@ Assemblies/*.dll
 Assemblies/*.pdb
 !Assemblies/README.txt
 
-# RimWorld mod loadfolders (usually auto-generated)
-loadFolders.xml
-
 # Temporary mod files
 *.tmp
 *.bak

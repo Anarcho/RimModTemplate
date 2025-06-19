@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef ParentName="InfectionBase">
+    <defName>ExampleHediffDefName</defName>
+    <label>Example</label>
+    <description>An example description.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <makesSickThought>true</makesSickThought>
+    <lethalSeverity>2</lethalSeverity>
+    <tendable>false</tendable>
+    <comps>
+      <!-- Example of a custom HediffCompProperties -->
+      <li Class="RimModTemplate.HediffCompProperties_ExampleHediffComp"/>
+      <!-- Example of a built-in HediffCompProperties -->
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.001</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>Minor</label>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.4</minSeverity>
+        <label>Moderate</label>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.3</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.7</minSeverity>
+        <label>Severe</label>
+        <lifeThreatening>true</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.5</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>
