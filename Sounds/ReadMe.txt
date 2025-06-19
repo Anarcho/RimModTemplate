@@ -1,4 +1,3 @@
-Known formats that work
-
+Known formats
 .mp3
 .wav
