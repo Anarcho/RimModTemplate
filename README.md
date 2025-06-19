@@ -182,6 +182,8 @@ public static class RimModTemplateDefOf
 ## Building and Testing
 
 ### Development Build
+
+Development build will launch rimworld as a post action - you can change this functionality in the csproj file.
 ```powershell
 dotnet build
 ```
@@ -189,11 +191,6 @@ dotnet build
 ### Release Build
 ```powershell
 dotnet build -c Release
-```
-
-### Quick Test (launches RimWorld)
-```powershell
-dotnet build && C:\Path\To\RimWorld\RimWorldWin64.exe -quicktest
 ```
 
 ## Best Practices

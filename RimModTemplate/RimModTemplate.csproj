@@ -45,6 +45,7 @@
     <ItemGroup>
       <PackageReference Include="Lib.Harmony" Version="1.2.0.1" />
     </ItemGroup>
+    <!-- remove this if you don't want rimworld to run after build -->
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
       <Exec Command="$(SolutionDir)..\..\.\RimWorldWin64.exe -quicktest" />
     </Target>
